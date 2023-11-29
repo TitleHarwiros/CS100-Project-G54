@@ -694,7 +694,7 @@ a {
   margin-right: -16px
 }
 
-.content,.w3-auto {
+.content,.auto {
   margin-left: auto;
   margin-right: auto
 }
@@ -732,7 +732,7 @@ a {
   display: none!important
 }
 
-.show-block,.w3-show {
+.show-block,.show {
   display: block!important
 }
 
@@ -955,7 +955,7 @@ a {
 }
 
 .row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col {
-  padding: 0 8px
+  padding: 0 70px
 }
 
 .container,.panel {

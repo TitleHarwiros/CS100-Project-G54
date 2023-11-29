@@ -463,3 +463,46 @@ a {
 .border-light-grey,.hover-border-light-grey:hover,.border-light-gray,.hover-border-light-gray:hover {
   border-color: #f1f1f1!important
 }
+/* Responsive Styles */
+@media (max-width: 600px) {
+  /* Styles for small screens (phones) */
+
+  .row-padding,
+  .row-padding > .half,
+  .row-padding > .third,
+  .row-padding > .twothird,
+  .row-padding > .threequarter,
+  .row-padding > .quarter,
+  .row-padding > .col {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0.01em 8px;
+  }
+
+  .bar .bar-item,
+  .col,
+  .button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  /* Styles for medium screens (tablets) */
+  
+  .row-padding,
+  .row-padding > .half,
+  .row-padding > .third,
+  .row-padding > .twothird,
+  .row-padding > .threequarter,
+  .row-padding > .quarter,
+  .row-padding > .col {
+    padding: 0 25px;
+  }
+
+  .container {
+    padding: 0.01em 16px;
+  }
+}
+

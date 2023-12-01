@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-  <title>Forms - CSTU Passport</title>
+  <title>Activities</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
@@ -13,20 +15,19 @@
   <div class="bar white wide padding card">
     <a href="index.html" class="bar-item button"><img src="image/home icon.png" alt="Trulli" width="55" height="55"></a>
   <div class="hide-small">
+
   <!-- Form Container -->
-  <!-- Form Container -->
-  <div class="form-container">
-    <h1>CSTU Passport</h1>
+  <div class="container">
+    <h1>Login to Activities</h1>
     <!-- Main Form -->
     <form id="myForm" action="#" method="post">
-      <!-- Firstname and Lastname Field -->
+      <!-- Full Name -->
       <div class="form-group">
-        <label for="fullname">Firstname and Lastname</label>
+        <label for="fullname">Full Name</label>
         <input type="text" id="fullname" name="fullname" />
         <small>Only enter your first name and last name, middle name is not necessary.</small>
         <span id="fullnameError" class="error"></span>
       </div>
-      
       <!-- Student ID Field -->
       <div class="form-group">
         <label for="studentID">Student ID</label>
@@ -34,7 +35,13 @@
         <small>Please enter your 10-digit student ID.</small>
         <span id="studentIDError" class="error"></span>
       </div>
-      
+        
+      <!-- birthday Field -->
+      <div class="form-group">
+        <label for="dateofBirth">Date of Birth</label>
+        <input type="date" id="dateofBirth" name="dateofBirth" placeholder="Enter birth date" required>
+      </div>
+
       <!-- University Email Field -->
       <div class="form-group">
         <label for="email">University Email</label>
@@ -43,20 +50,59 @@
         <span id="emailError" class="error"></span>
       </div>
 
-      <!-- Work/Activity Title Field -->
+      <!-- Mobile Number Field -->
       <div class="form-group">
-        <label for="workTitle">Work/Activity Title</label>
-        <input type="text" id="workTitle" name="workTitle" />
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="text" id="mobilenumber" name="mobilenumber" placeholder="Enter mobile number" required>
+      </div>
+
+      <!-- Gender Field -->
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+      </div>
+
+      <!-- Faculty Field -->
+      <div class="form-group">
+        <label for="faculty">FACULTIES / COLLEGES</label>
+        <select id="faculty" name="faculty">
+            <option value="" disabled selected>Select an option</option>
+            <option value="FacultyofLaw">Faculty of Law</option>
+            <option value="Business">Thammasat Business School</option>
+            <option value="PoliticalScience">Faculty of Political Science</option>
+            <option value="Economics">Faculty of Economics</option>
+            <option value="SocialAdministration">Faculty of Social Administration</option>
+            <option value="JournalismAndMassCommunication">Faculty of Journalism and Mass Communication</option>
+            <option value="SociologyAndAnthropology">Faculty of Sociology and Anthropology</option>
+            <option value="PueyUngphakornSchool">Puey Ungphakorn School of Development Studies</option>
+            <option value="CollegeOfInnovation">College of Innovation</option>
+            <option value="CollegeofInterdisciplinaryStudies">College of Interdisciplinary Studies</option>
+            <option value="PridiBanomyong">Pridi Banomyong International College</option>
+            <option value="LearningSciences">Faculty of Learning Sciences and Education</option>
+            <option value="SchoolofGlobalStudies">School of Global Studies</option>
+            <option value="LiberalArts">Faculty of Liberal Arts</option>
+            <option value="Fineart">Faculty of Liberal Arts</option>
+            <option value="Science">Faculty of Science and Technology</option>
+            <option value="Engineering">Faculty of Engineering</option>
+            <option value="ArchitectureAndPlanning">Faculty of Architecture and Planning</option>
+            <option value="SIIT">Sirindhorn International Institute of Technology</option>
+            <option value="FaculityOfMedicine">Faculty of Medicine</option>
+            <option value="facultyofdentistry">Faculty of Dentistry</option>
+            <option value="AlliedHealthSciences">Faculty of Allied Health Sciences</option>
+            <option value="FaculityOfNursing">Faculty of Nursing</option>
+            <option value="PublicHealth">Faculty of Public Health</option>
+            <option value="Pharm">Faculty of Pharmacy</option>
+            <option value="Chulabhorn">Chulabhorn International College of Medicine</option>
+          </select>
       </div>
 
       <!-- Type of Work/Activity Field -->
       <div class="form-group">
-        <label for="activityType">Type of Work/Activity</label>
-        <select id="activityType" name="activityType">
-          <option value="" disabled selected>Select an option</option>
-        </select>
-      </div>
-      <!-- <div class="form-group">
         <label for="activityType">Type of Work/Activity</label>
         <select id="activityType" name="activityType">
           <option value="" disabled selected>Select an option</option>
@@ -68,12 +114,12 @@
           <option value="Competition">Competition</option>
           <option value="Computer Science">Computer Science</option>
         </select>
-      </div> -->
+      </div>
 
       <!-- Academic Year Field -->
       <div class="form-group">
-        <label for="academicYear">Academic Year</label>
-        <select id="academicYear" name="academicYear">
+          <label for="academicYear">Academic Year</label>
+          <select id="academicYear" name="academicYear">
           <option value="" disabled selected>Select an option</option>
           <option value="2561">2561</option>
           <option value="2562">2562</option>
@@ -84,49 +130,67 @@
           <option value="2567">2567</option>
           <option value="2568">2568</option>
           <option value="2569">2569</option>
-        </select>
+          </select>
       </div>
+
 
       <!-- Semester Field -->
       <div class="form-group">
-        <label for="semester">Semester</label>
-        <select id="semester" name="semester">
+          <label for="semester">Semester</label>
+          <select id="semester" name="semester">
           <option value="" disabled selected>Select an option</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="Summer">Summer</option>
-        </select>
+          </select>
       </div>
 
       <!-- Start Date/Time Field -->
       <div class="form-group">
-        <label for="startDate">Start Date/Time</label>
-        <input type="datetime-local" id="startDate" name="startDate" />
+          <label for="startDate">Start Date/Time</label>
+          <input type="datetime-local" id="startDate" name="startDate" />
       </div>
 
       <!-- End Date/Time Field -->
       <div class="form-group">
-        <label for="endDate">End Date/Time</label>
-        <input type="datetime-local" id="endDate" name="endDate" />
+          <label for="endDate">End Date/Time</label>
+          <input type="datetime-local" id="endDate" name="endDate" />
       </div>
 
       <!-- Location Field -->
       <div class="form-group">
-        <label for="location">Location</label>
-        <input type="text" id="location" name="location" />
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" />
       </div>
 
-      <!-- Description Field -->
+      <!-- Activity Field -->
       <div class="form-group">
-        <label for="description">Description</label>
-        <textarea id="description" name="description" rows="4"></textarea>
+          <label for="Activity">Activity</label>
+          <select id="Activity" name="Activity">
+          <option value="" disabled selected>Select an option</option>
+          <option value="FillYourUniLife">ปฐมนิเทศ</option>
+          <option value="TUFreshman">TU Freshman Welcoming</option>
+          <option value="FirstMeet">First Meet</option>
+          <option value="RangsitLifeFest">Rangsit Life Fest</option>
+          <option value="TUOpenHouse">Thammasat Open House</option>
+          <option value="TUFreshyGame">Thammasat Freshy Game</option>
+          </select>
       </div>
 
       <!-- Submit Button -->
       <div class="form-group">
-        <input type="submit" value="Submit" />
+        <button onclick="getValuetoResult()">SUBMIT</button>
       </div>
     </form>
+  </div>
+
+  <div id="displaySection" style="display: none;">
+    <h2>Submitted Data</h2>
+    <pre id="displayData"></pre>
+  </div>
+
+  <div class="showresult" id="showresult" hidden> 
+
   </div>
 
   <!-- JavaScript -->

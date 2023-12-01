@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
-    margin: 3;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -11,11 +11,35 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
+ 
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right top, #ffc3a0, #ffbda5, #ffb7ac, #ffb3b4, #ffafbd);
+}
+
+body {
+  margin: 0;
+}
+
+.snowflake {
+  position: absolute;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  transform-origin: center center;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
 }
   
   /* Styling for the form container */

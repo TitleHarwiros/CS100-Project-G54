@@ -185,7 +185,7 @@ function getValuetoResult(){
   let location = document.getElementById('location')
   let activity = document.getElementById('Activity')
 
-
+  
   let res = document.getElementById('showresult')
   let msg = ''
   msg += '<h1><center>' + topic + '</center></h1>';

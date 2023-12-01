@@ -169,6 +169,7 @@ document.getElementById("email").addEventListener("input", validateEmail);
 
 function getValuetoResult(){
   document.getElementById('showresult').removeAttribute('hidden')
+  let topic = "Information"
   let fullname = document.getElementById('fullname')
   let stid = document.getElementById('studentID')
   let birth = document.getElementById('dateofBirth')
@@ -187,6 +188,7 @@ function getValuetoResult(){
 
   let res = document.getElementById('showresult')
   let msg = ''
+  msg += '<h1><center>' + topic + '</center></h1>';
   msg += '<p><b>Full Name :</b> '+ fullname.value +'</p>'
   msg += '<p><b>Student ID :</b> '+ stid.value +'</p>'
   msg += '<p><b>Date of Birth :</b> '+ birth.value +'</p>'

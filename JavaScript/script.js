@@ -171,12 +171,36 @@ function getValuetoResult(){
   document.getElementById('showresult').removeAttribute('hidden')
   let fullname = document.getElementById('fullname')
   let stid = document.getElementById('studentID')
+  let birth = document.getElementById('dateofBirth')
+  let mail = document.getElementById('email')
+  let mobilenum = document.getElementById('mobilenumber')
+  let gen = document.getElementById('gender')
   let fact = document.getElementById('faculty')
+  let type = document.getElementById('activityType')
+  let year = document.getElementById('academicYear')
+  let semester = document.getElementById('semester')
+  let start = document.getElementById('startDate')
+  let end = document.getElementById('endDate')
+  let location = document.getElementById('location')
+  let activity = document.getElementById('Activity')
 
   let res = document.getElementById('showresult')
   let msg = ''
   msg += '<p>Full Name :'+ fullname.value +'</p>'
   msg += '<p>Staudent ID :'+ stid.value +'</p>'
+  msg += '<p>Staudent ID :'+ birth.value +'</p>'
+  msg += '<p>Staudent ID :'+ mail.value +'</p>'
+  msg += '<p>Staudent ID :'+ mobilenum.value +'</p>'
+  msg += '<p>Staudent ID :'+ gen.value +'</p>'
   msg += '<p>Faculty : '+ fact.value +'</p>'
+  msg += '<p>Staudent ID :'+ type.value +'</p>'
+  msg += '<p>Staudent ID :'+ year.value +'</p>'
+  msg += '<p>Staudent ID :'+ semester.value +'</p>'
+  msg += '<p>Staudent ID :'+ start.value +'</p>'
+  msg += '<p>Staudent ID :'+ end.value +'</p>'
+  msg += '<p>Staudent ID :'+ location.value +'</p>'
+  msg += '<p>Staudent ID :'+ activity.value +'</p>'
+
+
   res.innerHTML = msg
 }

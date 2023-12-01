@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
   
   /* Styling for the form container */
-  .form-container {
+  .container {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
   }
   
   /* Center-align the heading and add margin at the bottom */
-  .form-container h1 {
+  .container h1 {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -31,7 +43,7 @@ body {
   /* Styling for various form input types */
   .form-group input[type="text"],
   .form-group input[type="email"],
-  .form-group select,
+  .form-group select
   .form-group textarea,
   .form-group input[type="datetime-local"] {
     width: 100%;
@@ -80,3 +92,12 @@ body {
     display: block;
     margin-top: 5px;
   }  
+
+  .showresult {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }

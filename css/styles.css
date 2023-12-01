@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
-    margin: 0;
+    margin: 3;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -21,6 +21,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+    border: 2px solid #36180b
   }
   
   /* Center-align the heading and add margin at the bottom */
@@ -100,4 +101,5 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
+    border: 2px solid #36180b
   }

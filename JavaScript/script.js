@@ -184,6 +184,7 @@ function getValuetoResult(){
   let location = document.getElementById('location')
   let activity = document.getElementById('Activity')
 
+
   let res = document.getElementById('showresult')
   let msg = ''
   msg += '<p><b>Full Name :</b> '+ fullname.value +'</p>'
@@ -203,4 +204,7 @@ function getValuetoResult(){
 
 
   res.innerHTML = msg
+
+  res.scrollIntoView()
 }
+

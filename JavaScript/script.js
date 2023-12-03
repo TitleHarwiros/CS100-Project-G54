@@ -167,7 +167,7 @@ document.getElementById("fullname").addEventListener("input", validateName);
 document.getElementById("studentID").addEventListener("input", validateStudentID);
 document.getElementById("email").addEventListener("input", validateEmail);
 
-function getValuetoResult(){
+function getValuetoResult(){     
   document.getElementById('showresult').removeAttribute('hidden')
   let topic = "Information"
   let fullname = document.getElementById('fullname')
@@ -210,3 +210,9 @@ function getValuetoResult(){
   res.scrollIntoView()
 }
 
+function validation(){
+  if(!validateName() || !validateStudentID() || !validateEmail()){
+      return false;
+  }
+  getValuetoResult();
+}

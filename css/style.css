@@ -1,40 +1,41 @@
 html {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 *,*:before,*:after {
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 
 html {
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 footer,header {
-  display: block
+  display: block;
 }
 
 a {
-  background-color: transparent
+  background-color: transparent;
 }
 
 a:active,a:hover {
-  outline-width: 0
+  outline-width: 0;
 }
 
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted
+  text-decoration: underline dotted;
 }
 
 img {
-  border-style: none
+  border-style: none;
 }
 
 
@@ -44,53 +45,53 @@ button {
 }
 
 button {
-  text-transform: none
+  text-transform: none;
 }
 
 /* End extract */
 html,body {
   font-family: Verdana,sans-serif;
   font-size: 15px;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 html {
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 36px
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 24px
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 20px
+  font-size: 20px;
 }
 
 h1,h3,h4 {
   font-family: "Segoe UI",Arial,sans-serif;
   font-weight: 400;
-  margin: 10px 0
+  margin: 10px 0;
 }
 
 .wide {
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .image {
   max-width: 100%;
-  height: auto
+  height: auto;
 }
 
 img {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 a {
-  color: inherit
+  color: inherit;
 }
 
 .button {
@@ -104,34 +105,34 @@ a {
   background-color: inherit;
   text-align: center;
   cursor: pointer;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .ul {
   list-style-type: none;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 .ul li {
   padding: 8px 16px;
-  border-bottom: 1px solid #ddd
+  border-bottom: 1px solid #ddd;
 }
 
 .button {
   width: 100%;
   text-align: left;
-  padding: 8px 16px
+  padding: 8px 16px;
 }
 
 .bar {
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .center .bar {
   display: inline-block;
-  width: auto
+  width: auto;
 }
 
 .bar .bar-item {
@@ -140,16 +141,16 @@ a {
   width: auto;
   border: none;
   display: block;
-  outline: 0
+  outline: 0;
 }
 
 .bar {
   position: static;
-  float: left
+  float: left;
 }
 
 .bar .button {
-  white-space: normal
+  white-space: normal;
 }
 
 .bar-item {
@@ -160,96 +161,96 @@ a {
   border: none;
   white-space: normal;
   float: none;
-  outline: 0
+  outline: 0;
 }
 
 .center .bar-item {
-  text-align: center
+  text-align: center;
 }
 
 .block {
   display: block;
-  width: 100%
+  width: 100%;
 }
 
 .container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before, .cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after {
   content: "";
   display: table;
-  clear: both
+  clear: both;
 }
 
 .col,.half,.third,.twothird,.threequarter,.quarter {
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 .col.s1 {
-  width: 8.33333%
+  width: 8.33333%;
 }
 
 .col.s2 {
-  width: 16.66666%
+  width: 16.66666%;
 }
 
 .col.s3 {
-  width: 24.99999%
+  width: 24.99999%;
 }
 
 .col.s4 {
-  width: 33.33333%
+  width: 33.33333%;
 }
 
 .col.s5 {
-  width: 41.66666%
+  width: 41.66666%;
 }
 
 .col.s6 {
-  width: 49.99999%
+  width: 49.99999%;
 }
 
 .col.s7 {
-  width: 58.33333%
+  width: 58.33333%;
 }
 
 .col.s8 {
-  width: 66.66666%
+  width: 66.66666%;
 }
 
 .col.s9 {
-  width: 74.99999%
+  width: 74.99999%;
 }
 
 .col.s10 {
-  width: 83.33333%
+  width: 83.33333%;
 }
 
 .col.s11 {
-  width: 91.66666%
+  width: 91.66666%;
 }
 
 .col.s12 {
-  width: 99.99999%
+  width: 99.99999%;
 }
 
 @media (min-width: 601px) {
   .col.m1 {
-      width:8.33333%
+      width:8.33333%;
   }
 
   .col.m2 {
-      width: 16.66666%
+      width: 16.66666%;
   }
 
   .col.m3,.quarter {
-      width: 24.99999%
+      width: 24.99999%;
   }
 
   .col.m4,.third {
-      width: 33.33333%
+      width: 33.33333%;
   }
 
   .col.m5 {
-      width: 41.66666%
+      width: 41.66666%;
   }
 
   .col.m6,.half {

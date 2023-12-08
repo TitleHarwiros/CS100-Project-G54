@@ -20,11 +20,11 @@ function validateName() {
 
 function validateStudentID() {
   const studentIDInput = document.getElementById("studentID");
-  const studentIDPattern = /^\d{10}$/;
+  const studentIDPattern = /^66\d{8}$/;
   const errorElement = document.getElementById("studentIDError");
 
   if (!studentIDPattern.test(studentIDInput.value)) {
-    errorElement.textContent = "Please enter a 10-digit Student ID.";
+    errorElement.textContent = "Please enter a 10-digit Student ID in the format '66xxxxxxxx'.";
     return false;
   } else {
     errorElement.textContent = "";
@@ -162,13 +162,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 document.getElementById("myForm").addEventListener("submit", submitForm);
-
 document.getElementById("fullname").addEventListener("input", validateName);
 document.getElementById("studentID").addEventListener("input", validateStudentID);
 document.getElementById("email").addEventListener("input", validateEmail);
 
+function validation(){
+  if(!validateName() || !validateStudentID() || !validateEmail()){
+      return false;
+  }
+  getValuetoResult();
+  showimage();
+}
+
 function getValuetoResult(){     
-  document.getElementById('showresult').removeAttribute('hidden')
+  document.getElementById('submitdate').removeAttribute('hidden')
   let topic = "Information"
   let fullname = document.getElementById('fullname')
   let stid = document.getElementById('studentID')
@@ -204,15 +211,24 @@ function getValuetoResult(){
   msg += '<p><b>Location :</b> '+ location.value +'</p>'
   msg += '<p><b>Activity :</b> '+ activity.value +'</p>'
 
-
   res.innerHTML = msg
 
   res.scrollIntoView()
 }
 
-function validation(){
-  if(!validateName() || !validateStudentID() || !validateEmail()){
-      return false;
+function showimage(){
+  var input = document.getElementById("imageInput");
+  var imageContainer = document.getElementById("showimg");  
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+          
+          var imageElement = document.createElement("img");
+          imageElement.src = e.target.result;
+          imageElement.width = 300; 
+          imageContainer.innerHTML = ""; 
+          imageContainer.appendChild(imageElement);
+      };
+      reader.readAsDataURL(input.files[0]);
   }
-  getValuetoResult();
 }

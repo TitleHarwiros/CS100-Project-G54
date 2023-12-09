@@ -20,18 +20,6 @@ body {
   margin: 0;
 }
 
-.snowflake {
-  position: absolute;
-  background: #fff;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  pointer-events: none;
-  user-select: none;
-  transform-origin: center center;
-  animation: fall linear infinite;
-}
-
 @keyframes fall {
   0% {
     transform: translateY(-100vh) rotate(0deg);
